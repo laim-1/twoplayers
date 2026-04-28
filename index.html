@@ -3,11 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two Player Mini Games</title>
+    <title>Two-Player Mini-Game Collection</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #menu { display: none; }
+        #game { display: none; }
+        #result { display: none; }
+        #scoreboard { margin: 20px; }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Two Player Mini Games!</h1>
-    <p>Current Date and Time (UTC): 2026-04-28 17:54:16</p>
-    <p>Current User's Login: laim-1</p>
+    <div id="menu">
+        <h1>Welcome to the Two-Player Mini-Game Collection</h1>
+        <button id="start">Start Game</button>
+    </div>
+    <div id="game">
+        <h2>Game Canvas</h2>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="scoreboard">
+            <p>Player 1 Score: <span id="player1Score">0</span></p>
+            <p>Player 2 Score: <span id="player2Score">0</span></p>
+        </div>
+        <button id="backToMenu">Back to Menu</button>
+    </div>
+    <div id="result">
+        <h2>Game Over</h2>
+        <p>Player 1 Score: <span id="finalPlayer1Score">0</span></p>
+        <p>Player 2 Score: <span id="finalPlayer2Score">0</span></p>
+        <button id="playAgain">Play Again</button>
+    </div>
+    <script>
+        let player1Score = 0;
+        let player2Score = 0;
+        document.getElementById('start').addEventListener('click', function() {
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('game').style.display = 'block';
+        });
+        document.getElementById('backToMenu').addEventListener('click', function() {
+            document.getElementById('game').style.display = 'none';
+            document.getElementById('menu').style.display = 'block';
+        });
+        document.getElementById('playAgain').addEventListener('click', function() {
+            player1Score = 0;
+            player2Score = 0;
+            document.getElementById('finalPlayer1Score').innerText = player1Score;
+            document.getElementById('finalPlayer2Score').innerText = player2Score;
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('game').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
