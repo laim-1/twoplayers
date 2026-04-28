@@ -1,0 +1,95 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #f0f0f0;
+}
+
+.scoreboard {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.canvas {
+  border: 2px solid #000;
+  background: #fff;
+  width: 80%;
+  height: 400px;
+}
+
+.player-one {
+  width: 45%;
+  margin-right: 5%;
+  background-color: #4CAF50; /* Green */
+  animation: slideInLeft 0.5s;
+}
+
+.player-two {
+  width: 45%;
+  margin-left: 5%;
+  background-color: #F44336; /* Red */
+  animation: slideInRight 0.5s;
+}
+
+.button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-start {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button-restart {
+  background-color: #FF9800;
+  color: white;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.menu-screen {
+  text-align: center;
+  padding: 50px;
+}
+
+.game-screen {
+  display: flex;
+  justify-content: space-around;
+}
+
+.result-screen {
+  font-size: 2em;
+  margin-top: 30px;
+  color: #333;
+}
