@@ -1,51 +1,112 @@
-// Implementation of two-player mini-games
+// Two-Player Mini-Games Implementations
 
-// Game 1: Speed Ball
-function speedBall() {
-    // Game logic here
+class ButtonMashingRace {
+    // Implementation
 }
 
-// Game 2: Dodge Rush
-function dodgeRush() {
-    // Game logic here
+class MemoryTilesMatch {
+    // Implementation
 }
 
-// Game 3: Pattern Repeat
-function patternRepeat() {
-    // Game logic here
+class CatchFallingObjects {
+    // Implementation
 }
 
-// Game 4: Tap Race
-function tapRace() {
-    // Game logic here
+class TargetShooter {
+    // Implementation
 }
 
-// Game 5: Color Match
-function colorMatch() {
-    // Game logic here
+class SnakeRace {
+    // Implementation
 }
 
-// Game 6: Chase
-function chase() {
-    // Game logic here
+class DodgeObstacles {
+    // Implementation
 }
 
-// Game 7: Target Shoot
-function targetShoot() {
-    // Game logic here
+class ColorMatching {
+    // Implementation
 }
 
-// Game 8: Simon Says
-function simonSays() {
-    // Game logic here
+class QuickMathQuiz {
+    // Implementation
 }
 
-// Game 9: Catch the Falling
-function catchTheFalling() {
-    // Game logic here
+class RhythmClicker {
+    // Implementation
 }
 
-// Game 10: Synchronized Movement
-function synchronizedMovement() {
-    // Game logic here
+class BlockStacker {
+    // Implementation
 }
+
+class ReactionTime {
+    // Implementation
+}
+
+class PatternRepeater {
+    // Implementation
+}
+
+class BallBouncer {
+    // Implementation
+}
+
+class LaserTag {
+    // Implementation
+}
+
+class RacingGame {
+    // Implementation
+}
+
+class SimonSaysAdvanced {
+    // Implementation
+}
+
+class FruitNinjaStyle {
+    // Implementation
+}
+
+class FlappyBirdDual {
+    // Implementation
+}
+
+class BreakoutBricks {
+    // Implementation
+}
+
+class FinalBossBattle {
+    // Implementation
+}
+
+// Game Controls
+const controls = {
+    player1: {
+        move: ['Q', 'W', 'E', 'R', 'A', 'S', 'D', 'F'],
+    },
+    player2: {
+        move: ['U', 'I', 'O', 'P', 'J', 'K', 'L', ';'],
+    },
+};
+
+// Round Management and Scoring
+let gameScores = {
+    player1: 0,
+    player2: 0,
+};
+
+function startGame() {
+    // Implement game start logic
+}
+
+function endGame() {
+    // Implement game end logic
+}
+
+function campaignMode() {
+    // Implement campaign mode that cycles through all games
+}
+
+// Implement timer for each game
+let gameTimeLimit = 30; // 30 seconds
